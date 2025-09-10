@@ -17,7 +17,7 @@
     overflow: hidden;
   }
 
-  .ring {
+  .circle {
     position: relative;
     width: 500px;
     height: 500px;
@@ -26,28 +26,28 @@
     align-items: center;
   }
 
-  .ring i {
+  .circle i {
     position: absolute;
     inset: 0;
     border: 2px solid #fff;
     transition: 0.5s;
   }
 
-  .ring i:nth-child(1){
+  .circle i:nth-child(1){
     border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
     animation: animate 4s linear infinite;
   }
 
-  .ring i:nth-child(2) {
+  .circle i:nth-child(2) {
   border-radius: 41% 44% 56% 59%/38% 62% 63% 37%;
   animation: animate 4s linear infinite;
 }
-.ring i:nth-child(3) {
+.circle i:nth-child(3) {
   border-radius: 41% 44% 56% 59%/38% 62% 63% 37%;
   animation: animate2 10s linear infinite;
 }
 
-.ring:hover {
+.circle:hover {
     border: 6px solid var(--clr);
     filter : drop-shadow(0 0 20px var(--clr))
 }
